@@ -4,7 +4,7 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Tallis do Carmo | Cardápio digital, sites e páginas de links em Tucano-BA</title>
-<meta name="description" content="Cardápio digital e página de links a partir de R$ 197, sites a partir de R$ 249. Identidade visual, posts e automação com IA para pequenos negócios de Tucano-BA e região.">
+<meta name="description" content="Cardápio digital, página de links, sites e lojas on-line, identidade visual, posts e automação com IA para pequenos negócios de Tucano-BA e região. Peça seu orçamento pelo WhatsApp.">
 <meta name="robots" content="index, follow">
 <link rel="canonical" href="https://tallisdocarmo.com.br/bio/">
 <meta property="og:type" content="website">
@@ -26,9 +26,9 @@
   "address": { "@type": "PostalAddress", "addressLocality": "Tucano", "addressRegion": "BA", "addressCountry": "BR" },
   "areaServed": ["Tucano", "Ribeira do Pombal", "Serrinha", "Feira de Santana"],
   "makesOffer": [
-    { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Cardápio digital" }, "priceSpecification": { "@type": "PriceSpecification", "minPrice": 197, "priceCurrency": "BRL" } },
-    { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Página de links" }, "priceSpecification": { "@type": "PriceSpecification", "minPrice": 197, "priceCurrency": "BRL" } },
-    { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Site ou loja on-line" }, "priceSpecification": { "@type": "PriceSpecification", "minPrice": 249, "priceCurrency": "BRL" } },
+    { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Cardápio digital" } },
+    { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Página de links" } },
+    { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Site ou loja on-line" } },
     { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Posts para redes sociais" } },
     { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Identidade visual" } },
     { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Automação com IA" } }
@@ -108,7 +108,7 @@
   .svc h3{font-size:21px;font-weight:600;letter-spacing:-.02em;line-height:1.15}
   .svc .num{font-size:14px;color:var(--blue)}
   .svc p{font-size:15.5px;color:var(--muted);line-height:1.5}
-  .svc .row2{display:flex;justify-content:space-between;align-items:center;gap:12px;margin-top:auto;padding-top:14px;border-top:1px solid var(--line-soft)}
+  .svc .row2{display:flex;justify-content:flex-end;align-items:center;gap:12px;margin-top:auto;padding-top:14px;border-top:1px solid var(--line-soft)}
   .svc .price{font-size:13.5px;color:var(--muted)}
   .svc .price b{color:var(--ink);font-weight:600;font-size:17px}
   .svc .go{display:inline-flex;align-items:center;gap:6px;font-size:14.5px;font-weight:500;color:var(--blue);transition:color .2s}
@@ -229,7 +229,7 @@
         <p class="lead">Cardápio digital, site, página de links, identidade visual, posts e automação com IA para pequenos negócios.</p>
         <div class="ctas">
           <a class="btn" data-wa="Olá, Tallis! Quero um orçamento." data-ev="hero">Pedir orçamento ↗</a>
-          <a class="sec" href="#servicos">Ver preços ↓</a>
+          <a class="sec" href="#servicos">Ver serviços ↓</a>
         </div>
         <p class="note">Tucano-BA · atendo Ribeira do Pombal, Serrinha, Feira de Santana e região</p>
       </div>
@@ -240,7 +240,7 @@
 
   <section class="block" id="servicos" aria-labelledby="t-servicos">
     <div class="container">
-      <p class="eyebrow">✦ Serviços e preços</p>
+      <p class="eyebrow">✦ Serviços</p>
       <div class="head">
         <h2 id="t-servicos">O que eu faço pelo seu negócio.</h2>
         <p class="lead">Clique no serviço para pedir o orçamento direto no WhatsApp.</p>
@@ -318,11 +318,11 @@
     } catch(e){}
   }
 
-  // [título, texto, preço ou null, nome do serviço na mensagem, destaque]
+  // [título, texto, (sem uso), nome do serviço na mensagem, destaque]
   var svcs = [
-    ["Cardápio digital", "Pare de mandar foto do cardápio no WhatsApp. O cliente escolhe, monta o pedido e já te envia tudo certinho.", "R$ 197", "cardápio digital interativo", true],
-    ["Página de links", "Seu cliente acha tudo num toque, sem precisar te perguntar.", "R$ 197", "página de links"],
-    ["Site ou loja on-line", "Apareça quando procurarem o seu negócio no Google.", "R$ 249", "landing page ou site"],
+    ["Cardápio digital", "Pare de mandar foto do cardápio no WhatsApp. O cliente escolhe, monta o pedido e já te envia tudo certinho.", null, "cardápio digital interativo", true],
+    ["Página de links", "Seu cliente acha tudo num toque, sem precisar te perguntar.", null, "página de links"],
+    ["Site ou loja on-line", "Apareça quando procurarem o seu negócio no Google.", null, "landing page ou site"],
     ["Posts para redes sociais", "Um Instagram que passa confiança antes do primeiro contato.", null, "design para mídias sociais"],
     ["Identidade visual", "Logo e cores para o seu negócio ser lembrado.", null, "identidade visual"],
     ["Automação com IA", "Atendimento e tarefas repetitivas rodando sozinhos.", null, "automação com IA"]
@@ -333,11 +333,10 @@
     a.className = "svc" + (s[4] ? " feat" : "");
     a.href = wa("Olá, Tallis! Quero um orçamento de " + s[3] + ".");
     a.target = "_blank"; a.rel = "noopener";
-    var price = s[2] ? "a partir de <b>" + s[2] + "</b>" : "Sob orçamento";
     a.innerHTML = (s[4] ? '<span class="badge">Para restaurantes e lanchonetes</span>' : "") +
       '<div class="row1"><h3>' + s[0] + '</h3><span class="num" aria-hidden="true">0' + (i + 1) + "</span></div>" +
       "<p>" + s[1] + "</p>" +
-      '<div class="row2"><span class="price">' + price + '</span><span class="go">' + (s[4] ? "Quero o meu" : "Orçar") + " " + arrow + "</span></div>";
+      '<div class="row2"><span class="go">Orçar ' + arrow + "</span></div>";
     a.addEventListener("click", function(){ track("whatsapp", "servico: " + s[0]); });
     list.appendChild(a);
   });
