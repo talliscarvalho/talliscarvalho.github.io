@@ -2,9 +2,8 @@
 
 > Designer e desenvolvedor web em Tucano-BA. Cria cardápio digital, página de links, sites e lojas on-line, identidade visual, posts para redes sociais e automação com IA para pequenos negócios de Tucano, Ribeira do Pombal, Serrinha, Feira de Santana e região.
 
-## Páginas
-- [Site](https://tallisdocarmo.com.br/): sites profissionais com domínio .com.br, entrega em até 5 dias úteis.
-- [Serviços](https://tallisdocarmo.com.br/bio/): todos os serviços e contato para orçamento.
+## Página
+- [Tallis do Carmo](https://tallisdocarmo.com.br/): todos os serviços e contato para orçamento pelo WhatsApp.
 
 ## Serviços (orçamento pelo WhatsApp)
 - Cardápio digital
