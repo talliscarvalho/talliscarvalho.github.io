@@ -48,8 +48,6 @@
     --dim:oklch(0.676 0.044 272);
     --blue:oklch(0.738 0.134 264);
     --blue-strong:oklch(0.652 0.185 262);
-    --lilac:oklch(0.833 0.074 292);
-    --lilac-2:oklch(0.786 0.100 291);
     --teal:oklch(0.783 0.103 171);
     --line:oklch(1 0 0 / 0.12);
     --line-soft:oklch(1 0 0 / 0.08);
@@ -64,7 +62,7 @@
   button{font:inherit;color:inherit;cursor:pointer}
   :focus-visible{outline:2px solid var(--blue);outline-offset:3px;border-radius:6px}
   .container{width:100%;max-width:480px;margin:0 auto;padding:0 22px}
-  .grad{background:linear-gradient(90deg in oklch,var(--ink) 0%,var(--lilac-2) 100%);-webkit-background-clip:text;background-clip:text;color:transparent}
+  .grad{color:var(--blue)}
   .arr{width:16px;height:16px;stroke:currentColor;fill:none;stroke-width:2;stroke-linecap:round;stroke-linejoin:round;flex:none}
 
   .site-top{padding-top:24px}
@@ -75,9 +73,9 @@
   .intro{padding-top:56px}
   .intro .container{display:flex;flex-direction:column;gap:18px}
   .intro-text,.intro-side{display:flex;flex-direction:column;gap:18px}
-  .pill{display:inline-flex;align-self:flex-start;align-items:center;gap:10px;padding:7px 14px;border:1px solid oklch(0.786 0.100 291 / 0.45);
-    border-radius:999px;background:oklch(0.786 0.100 291 / 0.08);font-size:13px;color:var(--lilac)}
-  .pill i{width:7px;height:7px;border-radius:50%;background:var(--lilac)}
+  .pill{display:inline-flex;align-self:flex-start;align-items:center;gap:10px;padding:7px 14px;border:1px solid var(--line);
+    border-radius:999px;background:var(--surface);font-size:13px;color:var(--muted)}
+  .pill i{width:7px;height:7px;border-radius:50%;background:var(--teal)}
   h1{font-size:38px;line-height:1;font-weight:500;letter-spacing:-.05em}
   .lead{font-size:17px;line-height:1.45;color:var(--muted);font-weight:300}
   .btn{display:inline-flex;align-items:center;justify-content:center;gap:10px;min-height:56px;padding:0 26px;border-radius:999px;
@@ -113,10 +111,10 @@
   .svc .price b{color:var(--ink);font-weight:600;font-size:17px}
   .svc .go{display:inline-flex;align-items:center;gap:6px;font-size:14.5px;font-weight:500;color:var(--blue);transition:color .2s}
   .svc:hover .go{color:var(--ink)}
-  .svc.feat{border-color:oklch(0.786 0.100 291 / 0.45);background:linear-gradient(160deg in oklch,oklch(0.6 0.12 290 / 0.22),oklch(1 0 0 / 0.02) 60%)}
+  .svc.feat{border-color:oklch(0.738 0.134 264 / 0.45);background:oklch(1 0 0 / 0.06)}
   .svc.feat h3{font-size:25px;letter-spacing:-.03em}
   .svc.feat .price b{font-size:22px}
-  .badge{align-self:flex-start;font-size:12px;color:var(--lilac);border:1px solid oklch(0.786 0.100 291 / 0.45);border-radius:999px;padding:4px 10px}
+  .badge{align-self:flex-start;font-size:12px;color:var(--muted);border:1px solid var(--line);border-radius:999px;padding:4px 10px}
 
   .steps{list-style:none;display:grid;grid-template-columns:1fr}
   .steps li{display:flex;align-items:flex-start;gap:14px;padding:16px 0;border-top:1px solid oklch(1 0 0 / 0.14);font-size:17px;line-height:1.4}
@@ -125,8 +123,7 @@
   .steps small{display:block;font-size:14.5px;color:var(--muted);font-weight:300;margin-top:2px}
 
   .final{margin-top:64px}
-  .final-box{padding:30px 22px 26px;border-radius:24px;border:1px solid var(--line);
-    background:linear-gradient(160deg in oklch,oklch(0.6 0.12 290 / 0.25),oklch(0.652 0.185 262 / 0.08) 60%,oklch(1 0 0 / 0.02))}
+  .final-box{padding:30px 22px 26px;border-radius:24px;border:1px solid var(--line);background:oklch(1 0 0 / 0.05)}
   .final-left{display:flex;flex-direction:column}
   .final h2{margin:10px 0 10px}
   .final .lead{font-size:16px}
