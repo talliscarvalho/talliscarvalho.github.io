@@ -78,11 +78,12 @@
   .grad{color:var(--blue)}
   .arr{width:16px;height:16px;stroke:currentColor;fill:none;stroke-width:2;stroke-linecap:round;stroke-linejoin:round;flex:none}
 
-  .site-top{padding-top:24px}
+  .site-top{padding-top:20px;position:absolute;left:0;right:0;top:0;z-index:5}
+  body{position:relative}
   .site-top .container{display:flex;align-items:center;justify-content:flex-end;gap:16px}
   .top-cta{display:none!important}
 
-  .intro{padding-top:56px}
+  .intro{padding-top:25px}
   .intro .container{display:flex;flex-direction:column;gap:18px}
   .intro-text,.intro-side{display:flex;flex-direction:column;gap:18px}
   .pill{display:inline-flex;align-self:flex-start;align-items:center;gap:10px;padding:7px 14px;border:1px solid var(--line);
@@ -178,10 +179,10 @@
   /* desktop: cards na horizontal */
   @media (min-width:1000px){
     .container{max-width:1200px;padding:0 40px}
-    .site-top{padding-top:32px}
+    .site-top{padding-top:32px;position:static}
     .top-cta{display:inline-flex!important;min-height:46px;padding:0 22px;font-size:15px}
 
-    .intro{padding-top:96px}
+    .intro{padding-top:56px}
     .intro .container{display:grid;grid-template-columns:minmax(0,1.35fr) minmax(0,1fr);gap:40px 72px;align-items:end}
     .intro-text{gap:24px}
     h1{font-size:clamp(56px,5.6vw,80px);line-height:.98}
